@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arab Culture</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* 华丽的渐变背景 */
+        body {
+            background: linear-gradient(135deg, #f3c5c5, #f7f7c8, #c8f7c8);
+            background-size: 400% 400%;
+            animation: gradientAnimation 10s ease infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* 文字动态效果 */
+        .dynamic-title {
+            font-size: 2.5rem;
+            color: #4CAF50;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+            animation: glowEffect 1.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes glowEffect {
+            from { text-shadow: 0 0 10px rgba(0, 255, 0, 0.5); }
+            to { text-shadow: 0 0 20px rgba(0, 255, 0, 0.8); }
+        }
+
+        /* 按钮样式 */
+        .cta-button {
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 1rem;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #45a049;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 class="dynamic-title">Welcome to Arab Culture</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="arab-culture.html">Arab Culture</a>
+    <a href="arab-cuisine.html">Arab Cuisine</a>
+    <a href="arab-news.html">Arab News</a>
+    <a href="arab-travel.html">Arab Travel</a>
+</nav>
+
+<div class="container">
+    <h2>Explore the Arab World</h2>
+    <p>Discover the beauty of Arab traditions, delicious cuisine, breaking news, and travel destinations. Start your journey here!</p>
+    <button class="cta-button" onclick="alert('Start exploring!')">Start Exploring</button>
+</div>
+
+<footer>
+    <p>&copy; 2025 Arab Culture Website. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
